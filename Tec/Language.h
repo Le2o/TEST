@@ -3,7 +3,6 @@
 
 #include "Procedural.h"
 #include "OOP.h"
-#include "Functional.h"
 
 namespace Filippov
 {
@@ -12,10 +11,10 @@ namespace Filippov
 		enum lang
 		{
 			PROCEDURAL,
-			OOP,
-			FUNCTIONAL
+			OOP
 		} key;
 		unsigned short int year_of_development;
+		int reference;
 	};
 
 	Language* Language_Input(ifstream &fin);
